@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Poppins&family=Prompt&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #10b981, #047857, #134e4a);
+}
+
+.form {
+  height: 50%;
+  padding: 30px;
+  width: 350px;
+  border-radius: 10px;
+  margin-top: 100px;
+  background-color: aliceblue;
+}
+
+input {
+  display: block;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-radius: 3px;
+  height: 2rem;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+label {
+  color: #27272a;
+  font-weight: bold;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  height: 1.5rem;
+  background-color: #22c55e;
+  color: antiquewhite;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+  height: 2rem;
+  transition: all 0.3s ease-in;
+  margin-top: 20px;
+}
+
+.header {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control.success input{
+  border-color: #22c55e;
+}
+
+.input-control.error input {
+  border-color: #dc2626;
+}
+
+.input-control .error {
+  color: #dc2626;
+  font-size: 9px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, #22c55e, #14532d);
+}
+
+input:focus {
+  background-color: #f0fdfa;
+  outline: 0;
+}
+/*
+input:valid {
+  border: 1px solid #14532d;
+}
+
+input:invalid {
+  /* border: 1px solid #dc2626; */
+} */
